@@ -1,0 +1,22 @@
+# Operating-system and editor files
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+
+# Virtual environments and test caches
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# Downloaded data and generated training artifacts
+CNN_EMNIST/GUI/letters/
+CNN_EMNIST/GUI/data/
+CNN_EMNIST/GUI/artifacts/
+
+# Generated applications
+CNN_EMNIST/GUI/dist/
+CNN_EMNIST/GUI/build/
+*.spec

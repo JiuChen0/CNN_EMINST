@@ -1,11 +1,10 @@
-import sys
-from PyQt5.QtWidgets import QWidget, QApplication
+from PyQt5.QtWidgets import QWidget
 from PyQt5.QtGui import QPixmap, QPainter, QPen, QColor
 from PyQt5.QtCore import Qt, QPoint, QSize
 
 
 class PaintBoard(QWidget):
-    def __init__(self,  Size=QSize(911, 261), Fill=QColor(255, 255, 255, 255)):
+    def __init__(self, Size=QSize(911, 261), Fill=QColor(255, 255, 255, 255)):
         super().__init__()
 
         self.__size = Size
@@ -59,4 +58,3 @@ class PaintBoard(QWidget):
             self.__painter.end()
             self.__begin_point = self.__end_point
             self.update()
-
